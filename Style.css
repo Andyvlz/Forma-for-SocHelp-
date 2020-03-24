@@ -1,0 +1,10 @@
+body{
+    background-image:url('../img/1.png');
+}
+.card{
+ opacity: 0.8;
+ color:black;
+}
+.centr{
+	text-align: center;
+}
