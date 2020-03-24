@@ -1,0 +1,122 @@
+ <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  </head>
+  <body> 
+  <div class="container justify-content-end col-md-6" style="margin: 25px auto 25px auto">
+    <div class="d-flex flex-column ">
+    <div class="centr">		
+    <h2 id="title" >Форма заявки на соц обслуживание</h2>
+    <p id="description">Заполните ваши данные</p>
+    </div>
+    <div class="card" >
+    <div class="card-body">
+    <form action="/action_page.php" id="survey-form">
+    <div class="form-group">
+    <label id="name-label" for="name">Имя: </label>
+    <input type="text" class="form-control" id="name" placeholder="Введите свое имя" required>
+    </div>
+    <div class="form-group">
+    <label id="email-label" for="email">Email :</label>
+    <input type="email" class="form-control" id="email" placeholder="Введите свою почту" required>
+    </div>
+    <div class="form-group">
+    <label id="age-label" for="age">Свой возраст:</label>
+    <input type="number" class="form-control" id="age" placeholder="Возраст" min="10" max="99">
+    </div>
+    <div class="form-group">
+    <p>Ваш социальный статус?</p>
+    <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Выберите ваш социальный статус</option>
+          <option value="old">Одинокий пенсионер</option>
+          <option value="Invalide">Инвалид</option>
+          <option value="Predsatv">Представитель пожилого человека</option>
+          <option value="Predsatv">Представитель пожилого инвалида</option>
+        </select>
+    </div>
+    <div class="form-group d-flex flex-column ">
+    <p>Нужнен ли вам соц работник на дом?</p>
+    <label >
+          <input
+            name="yes"
+            value="definitely"
+            type="radio"
+            checked
+            
+          />Да</label
+        >
+        
+        <label>
+          <input
+            name="yes"
+            value="maybe"
+            type="radio"
+            
+          />Нет</label
+        >  
+        <label
+          ><input
+            name="yes"
+            value="not-sure"
+            type="radio"
+          />Может быть</label
+        >
+        </div>
+        <div class="form-group">
+        <p>
+          Выберете свой доход
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Ваш доход</option>
+          <option value="challenges">меньше 15000 руб</option>
+          <option value="projects">15000 руб</option>
+          <option value="community">больше меньше 15000 руб</option>
+        </select>
+      </div>
+      <div class="form-group d-flex flex-column">
+      <p>Какой социальной услугой вы хотите воспользоваться?</p>
+      <label >
+          <input
+            name="front-end-projects"
+            value="front-end-projects"
+            type="checkbox"
+          />Вызов Соц работника на дом</label>
+          <label >
+          <input
+            name="back-end-projects"
+            value="back-end-projects"
+            type="checkbox"
+          />Соцально такси</label>
+          <label >
+          <input
+            name="Data Visualization"
+            value="Data Visualization"
+            type="checkbox"
+          />Массаж</label>
+      </div><div class="form-group ">
+    <textarea class="col-md-12"
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Введите ваши пожелания"
+        ></textarea>
+      </div>
+      <input type="Submit" class="btn-success col-md-12" style="height:10%">
+    </form>
+    </div>
+  </div>
+  </div>    
+  </div>
+  </body>
+  </html>
+  
+  
+  
